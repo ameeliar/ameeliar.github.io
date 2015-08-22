@@ -17,21 +17,20 @@ body {
 
 .jumbotron {
 	font-family: 'Poiret One', cursive;
-  background-image:url('http://goo.gl/04j7Nn');
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image:url('http://goo.gl/04j7Nn');
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .jumbotron .container h1{
 	font-family: 'Paris', serif;
-  position: relative;
-  top:100px;
+	position: relative;
+	top:100px;
 }
 
 .jumbotron h1 {
-  color: white
-  ;
+  color: white;
   font-size: 48px;  
   font-family: 'Poiret One', cursive;
   font-weight: bold;
