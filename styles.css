@@ -1,7 +1,7 @@
-      body {
-        font-family: 'Poiret+One', serif;
-        font-size: 20px;
-      }
+body {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+}
 
 .nav a {
   color: #5a5a5a;
