@@ -1,3 +1,8 @@
+      body {
+        font-family: 'Poiret+One', serif;
+        font-size: 20px;
+      }
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -23,7 +28,8 @@
 }
 
 .jumbotron h1 {
-  color: white;
+  color: white
+  ;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
