@@ -1,56 +1,26 @@
 body {
-   font-family: 'Poiret One', cursive;
-   font-size: 20px;
+   
+}
+
+.nav {
+    width: inherit;
 }
 
 .nav a {
   color: #5a5a5a;
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 18px;
   padding: 14px 10px;
   text-transform: uppercase;
 }
 
 .nav li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
   display: inline;
 }
 
-.jumbotron {
-	font-family: 'Poiret One', cursive;
-	background-image:url('http://goo.gl/04j7Nn');
-	height: 500px;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-h1 {
-	font-family: 'Paris', serif;
-	position: relative;
-	top:100px;
-}
-
-.jumbotron p {
-  color: white;
-  font-size: 48px;  
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-}
-
-.jumbotron p {
-  font-size: 20px;
-  color: #fff;
-}
-
-.learn-more {
-  background-color: #f7f7f7;
-}
-
-.learn-more h3 {
-  font-family: 'Poiret One', cursive;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.learn-more a {
-  color: #00b0ff;
+.about p {
+    position: relative;
+    vertical-align: middle;
+    float: inherit;
 }
