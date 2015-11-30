@@ -1,0 +1,89 @@
+.page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color: $royal-purple;
+  border: 1px solid $royal-purple;
+  color: #fff;
+  display: inline-block;
+  margin: 60px 0;
+  padding: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  &:hover {
+    color: $royal-purple;
+    background-color: $ice;
+  }
+  
+  &.float {
+    box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.25);
+  }
+  
+  &.rounded {
+    border-radius: 4px;
+  }
+}
+
+.lavender {
+  background-color: $lavender;
+}
+
+.lavender-s1 {
+  background-color: $lavender-s1;
+}
+
+.ice {
+  background-color: $ice;
+}
+
+.background-frost {
+  background-color: $frost;
+}
+
+.background-hazel {
+  background-color: $hazel;
+}
+
+.layout-wrapper {
+  margin: 100px 0;
+  position: relative;
+  
+  .background {
+    position: absolute;
+    opacity: .5;
+    
+    &.right-anchor {
+      right: 0;
+    }
+    
+    &.left-anchor {
+      left: 0;
+    }
+    
+    &.margin-bottom {
+      margin-bottom: $margin-top-bottom;
+    }
+    
+    &.margin-top {
+      margin-top: $margin-top-bottom;  
+    }
+    
+    &.full {
+      top: 0;
+      bottom: 0;
+    }
+    
+    &.with-gutters {
+      margin: 0 $page-gutter;
+    }
+  }  
+  
+  .content-wrapper {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+  }
+}

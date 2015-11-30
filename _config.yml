@@ -1,0 +1,6 @@
+# Site settings
+title: Amelia Ruslim - ...dwell in possiblity
+
+# Build settings
+markdown: kramdown
+permalink: pretty
