@@ -1,31 +1,12 @@
 #banner {
-  margin: 100px $page-gutter;
-  
-  .background {
-    width: calc(100% - 178px);
-  }
-  
-  .bottom {
-    margin-top: $margin-top-bottom;
-  }
-  
-  .top {
-    margin-bottom: $margin-top-bottom;
-  }
-  
-  .right {
-    right: 0;
-  }
-  
-  .left {
-    left: 0;
-  }
-  
+  margin-left: $page-gutter;
+  margin-right: $page-gutter;
+
   .content-wrapper {
-    padding: $margin-top-bottom $margin-left-right;
+    padding: $margin-top-bottom;
     
     .content {
-      margin: 90px 50px 90px 30px;
+      margin: $margin-top-bottom;;
       width: 100%;
     }
   }

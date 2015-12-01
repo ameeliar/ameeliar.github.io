@@ -20,8 +20,11 @@
   }
   
   nav {
+    box-sizing: border-box;
     height: 60px;
-    margin: 0 $page-gutter;
+    margin: 0 auto;
+    width: $max-width;
+    padding: 0 $page-gutter;
   }
 
   nav,

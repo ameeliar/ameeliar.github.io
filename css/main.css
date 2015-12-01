@@ -369,7 +369,7 @@ h2 {
   font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 60px 0; }
+  margin: 0; }
 
 h3 {
   font-size: 1.25rem;
@@ -381,14 +381,30 @@ h4 {
 
 .page-content {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1170px; }
+
+.background {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0; }
+  .background.bottom {
+    margin-top: 60px; }
+  .background.top {
+    margin-bottom: 60px; }
+  .background.right {
+    margin-right: 60px; }
+  .background.left {
+    margin-left: 60px; }
 
 .button {
   background-color: #444467;
   border: 1px solid #444467;
   color: #fff;
   display: inline-block;
-  margin: 60px 0;
+  margin: 0;
   padding: 1.2em;
   text-transform: uppercase;
   text-decoration: none; }
@@ -416,7 +432,7 @@ h4 {
   background-color: #bad4de; }
 
 .layout-wrapper {
-  margin: 100px 0;
+  margin: 120px 0;
   position: relative; }
   .layout-wrapper .background {
     position: absolute;
@@ -433,7 +449,7 @@ h4 {
       top: 0;
       bottom: 0; }
     .layout-wrapper .background.with-gutters {
-      margin: 0 72px; }
+      margin: 0 60px; }
   .layout-wrapper .content-wrapper {
     display: flex;
     position: relative;
@@ -456,8 +472,11 @@ h4 {
     .nav-wrapper a:hover {
       color: #0f0f21; }
   .nav-wrapper nav {
+    box-sizing: border-box;
     height: 60px;
-    margin: 0 72px; }
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0 60px; }
   .nav-wrapper nav,
   .nav-wrapper ul {
     align-items: center;
@@ -479,21 +498,12 @@ h4 {
     font-size: 1.5rem; }
 
 #banner {
-  margin: 100px 72px; }
-  #banner .background {
-    width: calc(100% - 178px); }
-  #banner .bottom {
-    margin-top: 60px; }
-  #banner .top {
-    margin-bottom: 60px; }
-  #banner .right {
-    right: 0; }
-  #banner .left {
-    left: 0; }
+  margin-left: 60px;
+  margin-right: 60px; }
   #banner .content-wrapper {
-    padding: 60px 178px; }
+    padding: 60px; }
     #banner .content-wrapper .content {
-      margin: 90px 50px 90px 30px;
+      margin: 60px;
       width: 100%; }
   #banner .row {
     display: flex; }
@@ -518,9 +528,6 @@ h4 {
     background: url(/img/IMG_1067.png) center 0 no-repeat;
     background-size: contain; }
 
-#work .background,
-#resume .background {
-  width: calc(100% - 142px); }
 #work .peach,
 #resume .peach {
   background-color: peachpuff; }
@@ -532,18 +539,20 @@ h4 {
   display: flex;
   flex-direction: row;
   position: relative; }
+  #work .content-row:first-child,
+  #resume .content-row:first-child {
+    margin-top: 60px;
+    margin-bottom: 30px; }
+  #work .content-row:last-child,
+  #resume .content-row:last-child {
+    margin-top: 30px;
+    margin-bottom: 60px; }
   #work .content-row.pull-up,
   #resume .content-row.pull-up {
-    margin-top: -100px; }
+    margin-top: -60px; }
   #work .content-row.align-right,
   #resume .content-row.align-right {
     justify-content: flex-end; }
-  #work .content-row:first-child,
-  #resume .content-row:first-child {
-    margin-top: 60px; }
-  #work .content-row:last-child,
-  #resume .content-row:last-child {
-    margin-bottom: 60px; }
   #work .content-row .content-background,
   #resume .content-row .content-background {
     bottom: 0;
@@ -554,15 +563,15 @@ h4 {
     top: 0; }
 #work .left,
 #resume .left {
-  margin-right: 250px; }
+  margin-right: 120px; }
 #work .right,
 #resume .right {
-  margin-left: 250px; }
+  margin-left: 120px; }
 #work .content,
 #resume .content {
   display: flex;
   flex-direction: row;
-  padding: 178px 70px;
+  padding: 60px 60px;
   position: relative;
   width: 100%; }
 #work .caps,
@@ -570,17 +579,21 @@ h4 {
   text-transform: uppercase; }
 
 #work h3 {
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: 0; }
 #work .snapstyle-image {
   background: url(/img/snapstyle.png) center 0 no-repeat;
   background-size: contain;
   height: 445px; }
 #work .col {
   width: 50%; }
+#work .content {
+  padding: 90px 60px; }
 
 #resume .content {
   display: block;
-  padding: 120px 70px 120px 0; }
+  padding: 60px;
+  padding-left: 0; }
 #resume h3 {
   margin: 2.4rem 0 1rem; }
   #resume h3:first-child {
@@ -593,21 +606,20 @@ h4 {
 #resume p {
   margin: .5rem 0; }
 
-#contact .background {
-  width: calc(100% - 72px); }
 #contact .content-wrapper {
-  margin: 60px 72px; }
+  margin: 60px 60px; }
 #contact .content {
-  margin: 0 178px 60px;
+  margin: 60px 120px;
   width: 100%; }
 #contact dl {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0; }
+  margin: 30px 0; }
   #contact dl dt, #contact dl dd {
-    width: 45%;
-    padding: 8px 15px; }
+    flex-grow: 1;
+    padding: 8px 15px;
+    width: 45%; }
   #contact dl dt {
     text-align: right; }
   #contact dl dd {
@@ -620,10 +632,13 @@ h4 {
     color: #0f0f21; }
 
 footer {
+  box-sizing: border-box;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 30px 72px; }
+  margin: 30px auto;
+  width: 1170px;
+  padding: 0 60px; }
   footer .left-footer span {
     display: inline-block; }
     footer .left-footer span:after {

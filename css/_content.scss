@@ -1,10 +1,6 @@
 #work,
 #resume {
-  
-  .background {
-    width: calc(100% - 142px);
-  }
-  
+
   .peach {
     background-color: peachpuff;
   }
@@ -17,23 +13,25 @@
     display: flex;
     flex-direction: row;
     position: relative;
+
+    &:first-child {
+      margin-top: $margin-top-bottom;
+      margin-bottom: $margin-top-bottom/2;
+    }
     
+    &:last-child {
+      margin-top: $margin-top-bottom/2;
+      margin-bottom: $margin-top-bottom;
+    }
+
     &.pull-up {
-      margin-top: -100px;
+      margin-top: -$margin-top-bottom;
     }
     
     &.align-right {
       justify-content: flex-end;
     }
-    
-    &:first-child {
-      margin-top: 60px;
-    }
-    
-    &:last-child {
-      margin-bottom: 60px;
-    }
-    
+
     .content-background {
       bottom: 0;
       left: 0;
@@ -42,21 +40,20 @@
       right: 0;
       top: 0;
     }
-    
   }
   
   .left {
-    margin-right: 250px;
+    margin-right: $margin-left-right + $page-gutter;
   }
   
   .right {
-    margin-left: 250px;
+    margin-left: $margin-left-right + $page-gutter;
   }
   
   .content {
     display: flex;
     flex-direction: row;
-    padding: 178px 70px;
+    padding: $margin-top-bottom $margin-left-right;
     position: relative;
     width: 100%;
   }
@@ -69,6 +66,7 @@
 #work {
   h3 {
     font-weight: normal;
+    margin-top: 0;
   }
   
   .snapstyle-image {
@@ -80,12 +78,17 @@
   .col {
     width: 50%;  
   }
+
+  .content {
+    padding: ($margin-top-bottom + $margin-top-bottom/2) $margin-left-right;
+  }
 }
 
 #resume {
   .content {
     display: block;
-    padding: 120px 70px 120px 0;
+    padding: $margin-top-bottom;
+    padding-left: 0;
   }
   
   h3 {

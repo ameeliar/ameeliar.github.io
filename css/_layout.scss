@@ -1,6 +1,31 @@
 .page-content {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: $max-width;
+}
+
+.background {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &.bottom {
+    margin-top: $margin-top-bottom;
+  }
+
+  &.top {
+    margin-bottom: $margin-top-bottom;
+  }
+
+  &.right {
+    margin-right: $margin-top-bottom;
+  }
+
+  &.left {
+    margin-left: $margin-top-bottom;
+  }
 }
 
 .button {
@@ -8,7 +33,7 @@
   border: 1px solid $royal-purple;
   color: #fff;
   display: inline-block;
-  margin: 60px 0;
+  margin: 0;
   padding: 1.2em;
   text-transform: uppercase;
   text-decoration: none;
@@ -48,7 +73,7 @@
 }
 
 .layout-wrapper {
-  margin: 100px 0;
+  margin: ($margin-top-bottom * 2) 0;
   position: relative;
   
   .background {

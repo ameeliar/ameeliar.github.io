@@ -1,8 +1,11 @@
 footer {
+  box-sizing: border-box;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 30px $page-gutter;
+  margin: 30px auto;
+  width: $max-width;
+  padding: 0 $page-gutter;
   
   .left-footer {
     span {
