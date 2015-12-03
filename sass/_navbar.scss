@@ -7,12 +7,17 @@
   width: 100%;
   z-index: 9000;
   
+  @media (max-width: $max-width) {
+    display: none;
+  }
+  
   a {
     color: $dirty-ice;
-    text-transform: lowercase;
     font-variant: small-caps;
-    text-decoration: none;
     font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: lowercase;
     
     &:hover {
       color: $dark-purple;

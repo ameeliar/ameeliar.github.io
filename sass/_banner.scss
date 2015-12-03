@@ -1,24 +1,49 @@
 #banner {
   margin-left: $page-gutter;
   margin-right: $page-gutter;
+  
+  @media (max-width: $max-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   .content-wrapper {
     padding: $margin-top-bottom;
     
+    @media (max-width: $max-width) {
+      padding: 2rem 1rem;
+    }
+    
     .content {
-      margin: $margin-top-bottom;;
+      margin: $margin-top-bottom;
+      
+      @media (max-width: $max-width) {
+        margin: 1rem 0;
+      }
       width: 100%;
     }
   }
   
   .row {
     display: flex;
+    flex-wrap: wrap;
 
     .col {
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 50%;
+      @media (max-width: $max-width) {
+        width: 100%;
+        padding: 0 .5rem;
+      }
+      
+      &:last-child {
+        @media (max-width: $max-width) {
+          display: none;
+        }
+      }
     }
   }
   
@@ -30,10 +55,16 @@
   }
 
   .banner-copy {
-    margin: 0 20px;
-
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+    @media (max-width: $max-width) {
+      padding: 0 .5rem;
+    }
+    
     h1 {
       color: #fff;
+      margin-top: 0;
       text-transform: uppercase;
     }
   }

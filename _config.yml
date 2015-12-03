@@ -4,3 +4,9 @@ title: Amelia Ruslim - ...dwell in possiblity
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# custom variables
+email: amelia.ruslim@gmail.com
+linkedin: https://www.linkedin.com/in/ameliaruslim
+medium: https://medium.com/@ameeliar
+twitter: https://twitter.com/ameeliar
