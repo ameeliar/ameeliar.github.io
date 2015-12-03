@@ -1,0 +1,106 @@
+footer {
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: $max-width;
+ 
+  padding: 0 $page-gutter;
+  @media (max-width: $max-width) {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    width: $mobile-width;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-footer {
+    @media (max-width: $max-width) {
+      margin: 1rem 0;
+    }
+    span {
+      display: inline-block;
+      
+      &:after {
+        content: '|';
+      }
+      
+      &:last-child {
+        &:after {
+          content: none;
+        }
+      }
+    }  
+  }
+  
+  .right-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    @media (max-width: $max-width) {
+      flex-direction: column-reverse;
+    }
+   
+    .tag-line {
+      display: block;
+      margin: 15px;
+    }
+    
+    .social-links {
+      @media (min-width: $max-width) {
+        border-left: 1px solid $dirty-ice;
+      }
+      
+      ul {
+        border-bottom: 1px solid $dirty-ice;
+        border-top: 1px solid $dirty-ice;
+        display: flex;
+        list-style: none;
+        margin: 8px 0;
+        margin-left: 15px;
+        padding: 4px;
+        @media (max-width: $max-width) {
+          margin: 1rem 0;
+        }
+      }
+      
+      li {
+        margin: 0 14px;
+        
+        &:first-child {
+          margin-left: 0;
+        }
+        
+        &:last-child {
+          margin-right: 0;
+        }
+        
+        a {
+          background-position: center center;
+          background-repeat: no-repeat;
+          display: block;
+          height: 24px;
+          width: 24px;
+        }
+      }
+      
+      .email {
+        background-image: url(/img/email.png);
+      }
+      
+      .linkedin {
+        background-image: url(/img/linkedin.png);
+      }
+      
+      .medium {
+        background-image: url(/img/medium.png);
+      }
+      
+      .twitter{
+        background-image: url(/img/twitter.png);
+      }
+    }
+  }
+}

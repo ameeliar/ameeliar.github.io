@@ -1,0 +1,84 @@
+#contact {
+  @media (max-width: $max-width) {
+    .background {
+      background: transparent;
+    }
+    
+    h2 {
+      padding: 0 1rem;
+    }
+  }
+  
+  .content-wrapper {
+    margin: $margin-top-bottom $page-gutter;
+    @media (max-width: $max-width) {
+      margin: 0;
+    }
+  }
+  
+  .content {
+    box-sizing: border-box;
+    margin: $margin-top-bottom ($margin-left-right * 2);
+    @media (max-width: $max-width) {
+      margin: 0;
+    }
+    width: 100%;
+  }
+  
+  dl {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: $margin-top-bottom/2 0;
+    @media (max-width: $max-width) {
+      padding: 2rem 1rem;
+      background-color: $hazel;
+    }
+    
+    dt, dd {
+      box-sizing: border-box;
+      flex-grow: 1;
+      padding: 8px 15px;
+      width: 50%;
+      @media (max-width: $max-width) { 
+        width: 100%;
+        padding: 0 0 .5rem 0;
+      }
+    }
+    
+    dt {
+      text-align: right;
+      @media (max-width: $max-width) { 
+        padding-top: 1rem;
+        &:first-child {
+          padding-top: 0;
+        }
+        text-align: left;
+      }
+    }
+    
+    dd {
+      margin: 0;
+      @media (min-width: $max-width) {
+        border-left: 1px solid $royal-purple;
+      }
+      @media (max-width: $max-width) { 
+        text-align: right;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: $royal-purple;
+    font-weight: 300;
+    
+    &:hover {
+      color: $dark-purple;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.page-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: $max-width;
+  @media (max-width: $max-width) {
+    width: $mobile-width;
+  }
+}
+
+.background {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &.bottom {
+    margin-top: $margin-top-bottom;
+    @media (max-width: $max-width) {
+      margin-top: 2rem;
+    }
+  }
+
+  &.top {
+    margin-bottom: $margin-top-bottom;
+    @media (max-width: $max-width) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &.right {
+    margin-right: $margin-top-bottom;
+    @media (max-width: $max-width) {
+      margin-right: 1rem;
+    }
+  }
+
+  &.left {
+    margin-left: $margin-top-bottom;
+    @media (max-width: $max-width) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.button {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  transition-duration: 500ms;
+  background-color: $royal-purple;
+  
+  &:hover {
+    transition-duration: 500ms;
+    background-color: $royal-purple-t1;
+  }
+  
+  &.rounded {
+    border-radius: 4px;
+  }
+}
+
+.lavender {
+  background-color: $lavender;
+}
+
+.lavender-s1 {
+  background-color: $lavender-s1;
+}
+
+.ice {
+  background-color: $ice;
+}
+
+.background-frost {
+  background-color: $frost;
+}
+
+.background-frost-s1 {
+  background-color: $frost-s1;
+}
+
+.background-hazel {
+  background-color: $hazel;
+}
+
+.layout-wrapper {
+  margin: ($margin-top-bottom / 2) 0;
+  position: relative;
+  @media (max-width: $max-width) {
+    margin: 2rem 0;
+  }
+  
+  &:first-child {
+    margin-top: $margin-top-bottom * 1.5;
+    @media(max-width: $max-width) {
+      margin-top: 1rem;
+    }
+  }
+  
+  &:last-child {
+    @media(max-width: $max-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  .background {
+    position: absolute;
+    opacity: .5;
+    
+    &.right-anchor {
+      right: 0;
+    }
+    
+    &.left-anchor {
+      left: 0;
+    }
+    
+    &.margin-bottom {
+      margin-bottom: $margin-top-bottom;
+    }
+    
+    &.margin-top {
+      margin-top: $margin-top-bottom;  
+    }
+    
+    &.full {
+      top: 0;
+      bottom: 0;
+    }
+    
+    &.with-gutters {
+      margin: 0 $page-gutter;
+    }
+  }  
+  
+  .content-wrapper {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+  }
+}
